@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-wrapper">
+            <form action="" novalidate autocomplete="off">
+                <h1>Javascript Form Validation Demo</h1>
+                <label for="email">
+                    Email
+                    <input type="email" name="email" id="email" required>
+                    <span class="error" id="emailError"></span>
+                </label>
+                <label for="country">
+                    Country
+                    <select name="country">
+                        <option value="USA" selected>USA</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Mexico">Mexico</option>
+                    </select>
+                    <span class="error" id="countryError"></span>
+                </label>
+                <label for="zip">
+                    Zip Code
+                    <input type="text" name="zip-code" id="zip" minlength="5" maxlength="5" required
+                        pattern="\b\d{5}\b">
+                    <span class="error" id="zipError"></span>
+                </label>
+                <label for="password">
+                    Password
+                    <input type="password" minlength="8" maxlength="128"
+                        pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" name="password" id="password" required>
+                    <span class="error" id="passwordError"></span>
+                </label>
+                <label for="password-confirmation">
+                    Confirm Password
+                    <input type="password" minlength="8" maxlength="128"
+                        pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" name="password-confirmation"
+                        id="password-confirmation" required>
+                    <span class="error" id="passwordConfError"></span>
+                </label>
+                <button type="submit">
+                    Submit
+                </button>
+                
+            </form>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

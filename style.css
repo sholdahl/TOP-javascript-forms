@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+    background:  linear-gradient(45deg,lightskyblue, lightpink) fixed;
+    font-family: monospace;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    background: radial-gradient(rgb(240, 240, 240), rgb(220, 220, 220));
+    padding: 50px 70px;
+    border-radius: 20px 1px;
+    border: 10px solid rgba(255, 182, 193, 0.3);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 50px 50px 0px rgba(80, 80, 80, 0.7);
+    width: 350px;
+}
+
+.form-wrapper{
+    padding: 50px;
+}
+
+h1{
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    line-height: 175%;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+label{
+    padding: 12.5px 0 -8.5px 0  ;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    text-transform: lowercase;
+    width: 100%;
+    position: relative;
+}
+input, select{
+    display: block;
+    border: 1px solid rgb(150, 150, 150);
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 5px;
+    background-color: white;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+button{
+    padding: 10px 20px;
+    background-color: white;
+    border: 4px solid lightpink;
+    border-radius: 5px;
+    width: 75%;
+    margin: auto;
+    color: lightpink;
+    font-size: 24px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: all 0.2s ease-in-out;
+    text-transform: lowercase;
+    font-family: monospace;
+    margin-top: 10px;
+}
+
+button:hover{
+    transition: all 0.2s ease-in-out;
+    background-color: lightpink;
+    color: white;
+}
+
+button:focus, button:active{
+    outline: none;
+}
+
+.error {
+    width: 100%;
+    padding: 0;
+    font-size: 80%;
+    color: white;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
+    box-sizing: border-box;
+    display: inline-block;
+    letter-spacing: 0;
+  }
+  
+  .error.active {
+    padding: 0.3em;
+  }
